@@ -1,18 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Hosted</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Hello, wishing you a beautiful day!</h1>
-    <form>
-        <input type="text" placeholder="Enter email">
-        <input type="password" placeholder="Enter your password">
-        <input type="submit">
-    </form>
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: rgb(177, 177, 157);
+      }
+      h1 {
+        color: green;
+        text-align: center;
+        margin: 50px auto;
+        font-size: 50px;
+        font-family: "Lobster", sans-serif;
+        font-weight: 700;
+        letter-spacing: 5px;
+      }
+      .color-variation {
+        color: greenyellow;
+      }
+      .natureWild {
+        width: 600px;
+        border-radius: 20px;
+        transition: all 250ms ease-in-out;
+        box-shadow: 10px 10px 30px rgb(81, 84, 76);
+        display: block;
+        margin: 0 auto;
+        border-bottom: 1px solid greenyellow;
+      }
+      .natureWild:hover {
+        transform: scale(1.2);
+      }
+      .codedBy {
+        font-family: monospace;
+        color: rgb(105, 98, 98);
+        font-size: 14px;
+        text-align: center;
+        margin-top: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🌿 Nature <span class="color-variation">&</span> Wild 🌿</h1>
+    <div class="natureWild">
+      <img
+        class="natureWild"
+        src="/Users/carvin/Desktop/CARLOTI/Pics/nature&wild.jpg"
+        alt="nature&wild"
+        width="100%"
+      />
+    </div>
+    <footer>
+      <div class="codedBy">Coded by <em>Ezuri</em></div>
+    </footer>
+    <script>
+      let name = prompt("What is your name?");
+      name = name.trim();
+      if (name.length > 0) {
+        alert(`Welcome to this adventure, ${name}! 🐢`);
+      } else {
+        alert("Too bad, we cannot proceed without your name!🦀");
+      }
+    </script>
+  </body>
 </html>
